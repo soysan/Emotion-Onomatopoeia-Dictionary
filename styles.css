@@ -1,0 +1,115 @@
+
+body{
+    margin: 0;
+    font-family: Futura!important;
+    letter-spacing: 0.02em!important;
+}
+/* for Top Category */
+.topContainer {
+    padding: 1em 2em;
+}
+.category {
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.category a{
+    text-decoration: none;
+}
+
+.eachEmoBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    padding: 1em 1em;
+    margin: 1em 1em;
+    height: 200px;
+    width: 200px;
+}
+.eachEmoBox:hover{
+    opacity: 0.8;
+}
+.categoryPic {
+    width: 50%;
+    height: 50%;
+}
+
+/* for emotional containar */
+.big-box{
+    padding: 1em 2em;
+    margin-bottom: 1em;
+}
+.big-box > h1, h4 {
+    color: white;
+}
+.emoWordBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1em;
+    margin: 1em 1em;
+}
+.pic {
+    width: 30vw;
+}
+
+/* dependency of screen size */
+@media (min-width: 768px){
+    .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .emoWordBox{
+        width: 30vw;
+        height: 150px;
+    }
+    .pic{
+        width: 50%;
+    }
+}
+
+
+/* bg-colors */
+.bg-lightgrey{
+    background-color: lightgrey;
+}
+.bg-white{
+    background-color: white;
+}
+.bg-red{
+    background-color: red;
+}
+.bg-yellow{
+    background-color: yellow;
+}
+.bg-grey{
+    background-color: grey;
+}
+.bg-green{
+    background-color: green;
+}
+.bg-beige{
+    background-color: beige;
+}
+.bg-purple{
+    background-color: purple;
+}
+.bg-orange{
+    background-color: orange;
+}
+.bg-yellow h1,
+.bg-yellow h2,
+.bg-yellow h4,
+.bg-beige h1,
+.bg-beige h2,
+.bg-beige h4 {
+    color: black;
+}
