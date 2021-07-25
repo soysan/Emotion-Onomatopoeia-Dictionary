@@ -1,7 +1,7 @@
 class Word {
-    constructor(word, defintion, pictureUrl) {
+    constructor(word, definition, pictureUrl) {
         this.word = word;
-        this.defintion = defintion;
+        this.definition = definition;
         this.pictureUrl = pictureUrl;
     }
 }
@@ -31,6 +31,7 @@ class EmotionObject {
             <h4>${this.description}</h4>
             <div class="row">
         `;
+
         for (let i = 0; i < this.getOnomatopoeiaWords().length; i++) {
             let currentWordOb = this.getOnomatopoeiaWords()[i];
             containerSection +=
@@ -38,7 +39,7 @@ class EmotionObject {
                 <div class="emoWordBox bg-white">
                     <div>
                         <h2>${currentWordOb.word}</h2>
-                        <p>${currentWordOb.defintion}</p>
+                        <p>${currentWordOb.definition}</p>
                     </div>
                     <img class="pic" src="${currentWordOb.pictureUrl}">
                 </div>
@@ -82,8 +83,8 @@ const dictionary = {
 };
 
 const pictureDictionary = {
-    "barl": "https://cdn.pixabay.com/photo/2013/07/25/11/59/german-shepherd-166972_1280.jpg",
-    "grunt": "https://cdn.pixabay.com/photo/2015/02/23/20/00/bodybuilder-646482_1280.jpg",
+    "bark": "https://cdn.pixabay.com/photo/2013/07/25/11/59/german-shepherd-166972_1280.jpg",
+    "grunt": "https://cdn.pixabay.com/photo/2019/03/03/19/47/pig-4032708_1280.jpg",
     "roar": "https://cdn.pixabay.com/photo/2018/04/13/21/24/lion-3317670_1280.jpg",
     "whack": "https://cdn.pixabay.com/photo/2017/10/27/11/49/boxer-2894025_1280.jpg",
     "smack": "https://cdn.pixabay.com/photo/2015/03/20/19/38/hammer-682767_1280.jpg",
@@ -95,10 +96,10 @@ const pictureDictionary = {
     "buzz": "https://cdn.pixabay.com/photo/2020/02/13/10/29/bees-4845211_1280.jpg",
     "caw": "https://cdn.pixabay.com/photo/2017/02/16/11/13/bird-2071185_1280.jpg",
     "chatter": "https://cdn.pixabay.com/photo/2014/07/25/08/55/bar-401546_1280.jpg",
-    "chant": "https://cdn.pixabay.com/photo/2014/05/03/01/02/concert-336695_1280.jpg",
+    "chant": "https://cdn.pixabay.com/photo/2013/07/13/11/31/man-158329_1280.png",
     "clatter": "https://cdn.pixabay.com/photo/2020/02/06/19/01/clutter-4825256_1280.jpg",
     "clunk": "https://cdn.pixabay.com/photo/2017/01/10/03/06/steel-1968194_1280.jpg",
-    "crawl": "https://cdn.pixabay.com/photo/2015/09/02/03/56/soldier-917947_1280.jpg",
+    "crawl": "https://cdn.pixabay.com/photo/2018/09/26/18/24/snail-3705324_1280.jpg",
     "flick": "https://cdn.pixabay.com/photo/2012/02/23/08/48/disgust-15793_1280.jpg",
     "giggle": "https://cdn.pixabay.com/photo/2017/08/07/15/18/people-2604850_1280.jpg",
     "gargle": "https://cdn.pixabay.com/photo/2017/04/03/16/32/girl-smoke-cigarette-2198839_1280.jpg",
@@ -120,7 +121,7 @@ const emoPics = {
 };
 
 const emotions = [
-    new EmotionObject("angry", "feeling or showing strong annoyance, displeasure, or hostility; full of anger.", "red", ["barl", "grunt", "roar", "whack", "smack", "hiss"]),
+    new EmotionObject("angry", "feeling or showing strong annoyance, displeasure, or hostility; full of anger.", "red", ["bark", "grunt", "roar", "whack", "smack", "hiss"]),
     new EmotionObject("happy", "feeling or showing pleasure or contentment.", "yellow", ["bling", "chatter", "chant", "giggle"]),
     new EmotionObject("bad", "not such as to be hoped for or desired; unpleasant or unwelcome.", "beige", ["ahem", "clatter", "clunk"]),
     new EmotionObject("sad", "feeling or showing sorrow; unhappy.", "grey", ["bawl", "whine", "waah"]),
