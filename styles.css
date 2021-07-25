@@ -14,7 +14,6 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
 }
 
 .category a{
@@ -32,15 +31,17 @@ body{
     height: 200px;
     width: 200px;
 }
+
 .eachEmoBox:hover{
     opacity: 0.8;
 }
+
 .categoryPic {
     width: 50%;
     height: 50%;
 }
 
-/* for emotional containar */
+/* for emotional container */
 .big-box{
     padding: 1em 2em;
     margin-bottom: 1em;
@@ -105,6 +106,7 @@ body{
 .bg-orange{
     background-color: orange;
 }
+
 .bg-yellow h1,
 .bg-yellow h2,
 .bg-yellow h4,
