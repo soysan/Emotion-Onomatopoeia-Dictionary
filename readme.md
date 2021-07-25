@@ -6,6 +6,8 @@ from [Recursion](https://recursionist.io)
 
 文字列キーとEmotionObjectのハッシュマップ、連想配列である辞書（単語：説明）、写真用辞書（単語：PicURL）を使用して効率的にレンダリングするプロジェクト。
 
+## URL
+[Emotion-Onomatopoeia-Dictionary](https://soysan.github.io/Emotion-Onomatopoeia-Dictionary/)
 ## Demo
 ![demo](demo.gif)
 
